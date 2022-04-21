@@ -60,7 +60,7 @@ int main( int argc, char *argv[] )
                 { std::cout << "Middle mouse button is up" << std::endl; }
             }
 
-            if ( event.type == SDL_MOUSEWHEEL )
+            if ( SDL_MOUSEWHEEL == event.type )
             {
                 if ( event.wheel.y > 0 ) // scroll up
                 { std::cout << "Mouse wheel is scrolling up" << std::endl; }
